@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cookie Clicker</title>
+<style>
+
+#cookies {
+  font-size: 2em;
+  color: brown;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: chocolate;
+  color: white;
+  border: none;
+  cursor: pointer;
+} 
+</style>
+</head>
+<body>
+
+<h1>Cookies: <span id="cookies">0</span></h1>
+<button onclick="addCookie()">Click Me!</button>
+
+<script>
+  let cookies = 0;
+  function addCookie() {
+    cookies++;
+    document.getElementById("cookies").innerText = cookies;
+  }
+</script>
+
+</body>
+</html>
